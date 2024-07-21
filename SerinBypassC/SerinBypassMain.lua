@@ -1,6 +1,6 @@
 local options = ({ ... })[1] or { Method = 1 }
 local Method = options.Method
-local MethodsList = { [1] = { [" "] = "", ["A"] = "А", ["B"] = "B̨̟̝̮̘̙̩̻̣̤̥ͅ", ["C"] = "С", ["D"] = "D̨̟̝̮̘̙̩̻̤̣̥ͅ", ["E"] = "Е", ["F"] = "Ḟ̨̟̝̮̘̙̩̻̣̤̥ͅ", ["G"] = "Ģ̨̟̝̮̘̙̩̻̣̤̥ͅ", ["H"] = "H̨̟̝̮̥̘̙̩̻̣̤ͅ}, 
+local MethodsList = { [1] = { [" "] = "", ["A"] = "А", ["B"] = "B̨̟̝̮̘̙̩̻̣̤̥ͅ", ["C"] = "С", ["D"] = "D̨̟̝̮̘̙̩̻̤̣̥ͅ", ["E"] = "Е", ["F"] = "Ḟ̨̟̝̮̘̙̩̻̣̤̥ͅ", ["G"] = "Ģ̨̟̝̮̘̙̩̻̣̤̥ͅ", ["H"] = "H̨̟̝̮̥̘̙̩̻̣̤ͅ", ["I"] = "І"}, 
   [2] = { [" "] = "", ["A"] = "А"}}
 function RepLet(text, MethodsList)
 local MethodTable = MethodsList[Method] or {}
