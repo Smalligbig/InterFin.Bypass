@@ -6,7 +6,7 @@ local MethodsList = {
   [2] = { [" "] = "", ["A"] = "А"}}
 function RepLet(text, MethodsList)
 local MethodTable = MethodsList[Method] or {}
-local result = ""
+local result = filler, ""
 result = text:gsub(".", function(char) return MethodTable[char] or char end) return result 
 end
 local test = RepLet("HI", MethodsList)
