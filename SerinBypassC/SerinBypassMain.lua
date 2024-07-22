@@ -7,7 +7,11 @@ local MethodsList = {
 function RepLet(text, MethodsList)
 local MethodTable = MethodsList[Method] or {}
 local result = ""
-result = text:gsub(".", function(char) return MethodTable[char] or char end) return filler .. result
+result = text:gsub(".", function(char) return MethodTable[char] or char end) 
+  if Method == 1 then 
+  return filler .. result
+  end
+  return result
 end
 local test = RepLet("HI", MethodsList)
 print(test)
