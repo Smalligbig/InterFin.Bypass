@@ -15,3 +15,14 @@ result = text:gsub(".", function(char) return MethodTable[char] or char end)
 end
 local test = RepLet("HI", MethodsList)
 print(test)
+
+local old
+old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+
+    if method == "FireServer" and self.Name == "SayMessageRequest" and #args == 2 and not checkcaller() then
+        local newMessage = args[1]
+        RepLet(newMessage, MethodsList)
+    return old(self, ...)
+end))
