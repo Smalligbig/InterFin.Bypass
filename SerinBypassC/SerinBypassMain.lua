@@ -1,6 +1,6 @@
 local options = ({ ... })[1] or { Method = 1 }
 local Method = options.Method
-local filler = "︠︠︠ ॔॔॔ ̈́͊̈́͊̈́͊̈́͊̈́͊̓҄ ॓॓॓॓॓॓॓॓⬞  ॓ " 
+local filler = "︠︠︠ ॔॔॔ ̈́͊̈́͊̈́͊̈́͊̈́͊̓҄ ॓॓॓॓॓॓॓॓⬞  ॓ ိ   ိ  " 
 local MethodsList = {
   [1] = { [" "] = "", ["A"] = "А", ["B"] = "В", ["C"] = "С", ["E"] = "Е", ["G"] = "Ġ", ["H"] = "Н", ["I"] = "І", ["J"] = "Ј", ["K"] = "К",  ["N"] = "Ν", ["O"] = "О", ["P"] = "Р",  ["R"] = "Ṛ̘̙̝̞", ["S"] = "Ѕ", ["T"] = "Т", ["U"] = "∪",  ["X"] = "Х", ["Y"] = "Ү", ["a"] = "а", ["b"] = "ḅ", ["c"] = "с", ["e"] = "е", ["g"] = "ɡ", ["h"] = "һ", ["i"] = "і", ["j"] = "ј", ["k"] = "к",  ["n"] = "ṅ", ["o"] = "о", ["p"] = "р", ["r"] = "ṛ̘̙̝̞", ["s"] = "ѕ", ["t"] = "ʈ", ["u"] = "υ",  ["x"] = "х", ["y"] = "у"}, 
   [2] = { [" "] = "", ["A"] = "А"}}
@@ -15,21 +15,3 @@ result = text:gsub(".", function(char) return MethodTable[char] or char end)
 end
 local test = RepLet("HI", MethodsList)
 print(test)
-
-local meta = getrawmetatable(game);
-if (make_writeable ~= nil) then
-make_writeable(meta);
-elseif (setreadonly ~= nil) then
-setreadonly(meta, false);
-end;
-
-local old = meta.__namecall;
-meta.__namecall = newcclosure(function(self, ...)
-	local args = {...};
-	if tostring(getnamecallmethod()) == "FireServer" and self.Name == "SayMessageRequest" then
-		local msg = args[1];
-RepLet(msg, MethodsList) 
-		return old(self, msg, args[2]);
-	end;
-	return old(self, ...);
-end);
