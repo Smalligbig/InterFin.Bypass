@@ -25,4 +25,4 @@ old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
         local newMessage = args[1]
         RepLet(newMessage, MethodsList)
     return old(self, ...)
-end))
+end)
