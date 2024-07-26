@@ -16,6 +16,13 @@ end
 local test = RepLet("HI", MethodsList)
 print(test)
 
+local meta = getrawmetatable(game);
+if (make_writeable ~= nil) then
+make_writeable(meta);
+elseif (setreadonly ~= nil) then
+setreadonly(meta, false);
+end;
+
 local old = meta.__namecall;
 meta.__namecall = newcclosure(function(self, ...)
 	local args = {...};
