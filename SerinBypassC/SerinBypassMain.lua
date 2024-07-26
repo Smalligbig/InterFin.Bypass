@@ -12,6 +12,9 @@ result = text:gsub(".", function(char) return MethodTable[char] or char end)
   if Method == 1 then 
   return filler .. result
   end
+  if Method == 2 then
+  return filler2 .. result
+  end
   return result
 end
 local test = RepLet("HI", MethodsList)
