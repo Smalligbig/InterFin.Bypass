@@ -1,4 +1,6 @@
 local options = ({ ... })[1] or { Method = 1 }
+local TCS = Workspace.TextChatService
+if game:IsLoaded() then
 local Method = options.Method
 local filler = "︠︠︠ ॔॔॔ ̈́͊̈́͊̈́͊̈́͊̈́͊̓҄ ॓॓॓॓॓॓॓॓⬞  ॓ ိ   ိ  " 
 local filler2 = "FAG "
@@ -17,4 +19,6 @@ result = text:gsub(".", function(char) return MethodTable[char] or char end)
 
 end
 local test = RepLet("HI", MethodsList)
+
+else game.Loaded:Wait() end
 print(test)
