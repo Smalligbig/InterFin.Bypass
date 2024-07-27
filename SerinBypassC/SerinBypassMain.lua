@@ -1,5 +1,8 @@
 local options = ({ ... })[1] or { Method = 1 }
 local TCS = Workspace.TextChatService
+local TCSenum = TCS.ChatVersion
+local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
+local NCevent = game.TextChatService.TextChannels.RBXGeneral
 if game:IsLoaded() then
 local Method = options.Method
 local filler = "︠︠︠ ॔॔॔ ̈́͊̈́͊̈́͊̈́͊̈́͊̓҄ ॓॓॓॓॓॓॓॓⬞  ॓ ိ   ိ  " 
