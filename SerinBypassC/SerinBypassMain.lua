@@ -1,5 +1,5 @@
--- CHat bypass was made by Smalligbig/Dansk.sinken
---[[       
+--[[ 
+Chat bypass was made by Smalligbig/Dansk.sinken
  ░▒▓███████▓▒░ ░▒▓████████▓▒░ ░▒▓███████▓▒░  ░▒▓█▓▒░ ░▒▓███████▓▒░                        
 ░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                       
 ░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                       
@@ -29,7 +29,6 @@ Method = 1
 end
 if game:IsLoaded() then
 
-
 local Method = options.Method
 local filler = "︠︠︠ ॔॔॔ ̈́͊̈́͊̈́͊̈́͊̈́͊̓҄ ॓॓॓॓॓॓॓॓⬞  ॓ ိ   ိ  " 
 local filler2 = "FAG "
@@ -46,7 +45,6 @@ result = text:gsub(".", function(char) return MethodTable[char] or char end)
     return filler2 .. result
   end
 
-  
 end
 local test = RepLet("HI", MethodsList)
 print(test)
