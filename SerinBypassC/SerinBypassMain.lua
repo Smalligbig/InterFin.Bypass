@@ -27,6 +27,9 @@ if TCSenum == Enum.ChatVersion.TextChatService then
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest")) then
 Method = 1
 end
+if Method == 3 then
+
+end
 if game:IsLoaded() then
 
 local Method = options.Method
