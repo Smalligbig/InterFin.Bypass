@@ -27,10 +27,11 @@ if TCSenum == Enum.ChatVersion.TextChatService then
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest")) then
 Method = 1
 end
-if Method == 3 then
-
-end
 if game:IsLoaded() then
+
+if Method == 3 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/SerinBypassRblx/main/SerinBypassC/Method3Bypass.lua",true))()
+end
 
 local Method = options.Method
 local filler = " ̥̦̼̥̦̼̥̦̼̥̦̼̥̦̼̥̦̼͊͊͊͊͊͊ ̻̬̻̬̻̬  ͝͝   e̎͝͝͝   " 
