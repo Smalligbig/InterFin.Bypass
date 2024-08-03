@@ -8,7 +8,9 @@ Serin Bypass Method 3
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░             ░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░       ░▒▓███████▓▒░     
 ]] 
---[[ Bypassed Phrases
+--[[ 
+Bypassed Phrases
+
 homophobic >
 Who let this gay dude out of the torture cell
 Get this gay dude in the torture cell
