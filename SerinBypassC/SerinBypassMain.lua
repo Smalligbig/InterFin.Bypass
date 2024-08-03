@@ -18,7 +18,7 @@ Chat bypass was made by Smalligbig/Dansk.sinken
 ░▒▓███████▓▒░     ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░  ░▒▓███████▓▒░  
 ]]
 local options = ({ ... })[1] or { Method = 1 }
-local TCS = Workspace.TextChatService
+local TCS = Game:GetService("TextChatService") 
 local TCSenum = TCS.ChatVersion
 local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
 local NCevent = game.TextChatService.TextChannels.RBXGeneral
