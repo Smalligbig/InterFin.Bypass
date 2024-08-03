@@ -24,7 +24,7 @@ local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents
 local NCevent = game.TextChatService.TextChannels.RBXGeneral
 if TCSenum == Enum.ChatVersion.TextChatService then
   Method = 2
-elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest")) then
+elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
 Method = 1
 end
 
