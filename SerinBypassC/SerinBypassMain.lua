@@ -21,7 +21,7 @@ local options = ({ ... })[1] or { Method = 1 }
 local TCS = Game:GetService("TextChatService") 
 local TCSenum = TCS.ChatVersion
 local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
-local NCevent = game.TextChatService.TextChannels.RBXGeneral
+--local NCevent = game.TextChatService.TextChannels.RBXGeneral
 if TCSenum == Enum.ChatVersion.TextChatService then
   Method = 2
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
