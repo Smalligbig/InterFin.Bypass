@@ -21,16 +21,15 @@ local options = ({ ... })[1] or { Method = 1 }
 local TCS = Game:GetService("TextChatService") 
 local TCSenum = TCS.ChatVersion
 local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
---[[
-local NCevent = game.TextChatService.TextChannels.RBXGeneral
-]] 
-if TCSenum == Enum.ChatVersion.TextChatService then
+local Player = game:GetService("Players")
+-- game.TextChatService.TextChannels.RBXGeneral:SendAsync(STRING HERE, "All");
   Method = 2
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
 Method = 1
 end
 
 if game:IsLoaded() then
+ 
 if Method == 3 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/SerinBypassRblx/main/SerinBypassC/Method3Bypass.lua",true))()
 end
@@ -59,4 +58,5 @@ function RepLet(text, MethodsList)
  
 local test = RepLet("Testing", MethodsList)
 print(test)
+game:GetService("Chat"):Chat(Player.LocalPLayer.Character,"Chat bypass was made by Dansk/Smalligbig", Enum.ChatColor.Blue)
 else game.Loaded:Wait() end
