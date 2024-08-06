@@ -23,13 +23,12 @@ local TCSenum = TCS.ChatVersion
 local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
 local Player = game:GetService("Players")
 -- game.TextChatService.TextChannels.RBXGeneral:SendAsync(STRING HERE, "All");
-  Method = 2
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
 Method = 1
 end
-
 if game:IsLoaded() then
- 
+game:GetService("Chat"):Chat(game.Players.LocalPlayer.Character,"Chat bypass was made by Dansk/Smalligbig", Enum.ChatColor.Red)
+
 if Method == 3 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/SerinBypassRblx/main/SerinBypassC/Method3Bypass.lua",true))()
 end
@@ -41,7 +40,6 @@ local filler = "#̛̛̛̓̉̂͒̌̿̓̉̂͒̌̿̓̉̂͒̌̿#̛̌̓͒̉̂̿̓̉̂
 local MethodsList = {
   [1] = { [" "] = "", ["A"] = "Α", ["B"] = "В", ["C"] = "С", ["E"] = "Е", ["G"] = "Ġ", ["H"] = "Н", ["I"] = "І", ["J"] = "Ј", ["K"] = "Κ",  ["N"] = "Ν", ["O"] = "О", ["P"] = "Р", ["S"] = "ჽ", ["T"] = "Т", ["U"] = "∪", ["V"] = "Ѵ", ["X"] = "Х", ["Y"] = "Ү", ["a"] = "а", ["b"] = "ხ", ["c"] = "с", ["e"] = "е", ["g"] = "ɡ", ["h"] = "һ", ["i"] = "і", ["j"] = "ј", ["k"] = "ҟ",  ["n"] = "ท", ["o"] = "о", ["p"] = "р", ["s"] = "ร", ["t"] = "ʈ", ["u"] = "น", ["v"] = "ѵ", ["x"] = "х", ["y"] = "у"}, 
   [2] = { [" "] = "", ["A"] = "А"}}
- 
 function RepLet(text, MethodsList)
     local MethodTable = MethodsList[Method] or {}
     local result = ""
@@ -55,8 +53,4 @@ function RepLet(text, MethodsList)
   end
     return filler .. result
  end
- 
-local test = RepLet("Testing", MethodsList)
-print(test)
-game:GetService("Chat"):Chat(game.Players.LocalPlayer.Character,"Chat bypass was made by Dansk/Smalligbig", Enum.ChatColor.Red)
 else game.Loaded:Wait() end
