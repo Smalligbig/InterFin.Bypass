@@ -58,5 +58,5 @@ function RepLet(text, MethodsList)
  
 local test = RepLet("Testing", MethodsList)
 print(test)
-game:GetService("Chat"):Chat(Player.LocalPLayer.Character,"Chat bypass was made by Dansk/Smalligbig", Enum.ChatColor.Blue)
+game:GetService("Chat"):Chat(game.Players.LocalPlayer.Character,"Chat bypass was made by Dansk/Smalligbig", Enum.ChatColor.Red)
 else game.Loaded:Wait() end
