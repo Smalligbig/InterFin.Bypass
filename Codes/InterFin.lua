@@ -5,12 +5,22 @@ Chat bypass was made by Smalligbig/Dansk.sinken
 | || |\  |  | |  | {__ | .-. \| |   | || |\  |
 `-'`-' `-'  `-'  `----'`-' `-'`-'   `-'`-' `-'
 ]]
+task.spawn(function()
 local options = ({ ... })[1] or { Method = 1 }
 local TCS = Game:GetService("TextChatService") 
 local TCSenum = TCS.ChatVersion
 local OCevent = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest;
 --[[
 local NCevent = game.TextChatService.TextChannels.RBXGeneral ]] 
+
+local StarterGui = game:GetService("StarterGui")
+	task.spawn(function()
+		local function showNotification(title, text)
+			StarterGui:SetCore("SendNotification",{Title = title, Text = text,Duration =7})
+		end
+		showNotification("InterFin","Chat bypass was made by Dansk.Sinken/Smalligbig")
+	end)
+
 if TCSenum == Enum.ChatVersion.TextChatService then
   Method = 2
 elseif game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
@@ -50,3 +60,6 @@ local test = RepLet("Testing", MethodsList)
 print(test)
 
 else game.Loaded:Wait() end
+
+
+  end)
