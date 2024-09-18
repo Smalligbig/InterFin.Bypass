@@ -14,4 +14,4 @@
 (_____)----------------------------------------------------------(_____)
 
 ]]
-loadstring(game:HttpGet("https://pastebin.com/raw/tixBig4X"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/tixBig4X", true))()
