@@ -29,7 +29,7 @@ end
 
 if game:IsLoaded() then
 if Method == 3 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/InterFin.Bypass/main/Codes/Method%203",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/InterFin.Bypass/refs/heads/main/Codes/Method%203.lua",true))()
 end
 local Method = options.Method
 
