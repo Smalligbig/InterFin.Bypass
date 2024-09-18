@@ -14,4 +14,4 @@
 (_____)----------------------------------------------------------(_____)
 
 ]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Smalligbig/InterFin.Bypass/refs/heads/main/Codes/SOURCE.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/tixBig4X"))()
